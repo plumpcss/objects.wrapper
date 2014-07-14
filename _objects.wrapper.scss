@@ -1,0 +1,29 @@
+///*------------------------------------*\
+//   #WRAPPER
+//\*------------------------------------*/
+
+$plump-wrapper-width:          1200px !default;
+$plump-wrapper-width-narrow:   960px !default;
+$plump-wrapper-padding:        $plump-base-spacing-unit !default;
+
+$plump-enable-wrapper--narrow: false !default;
+
+.#{$plump-namespace}wrapper,
+%#{$plump-namespace}wrapper {
+	max-width: $plump-wrapper-width;
+	padding-right: $plump-wrapper-padding;
+	padding-left: $plump-wrapper-padding;
+}
+
+
+
+
+
+@if ($plump-enable-wrapper--narrow == true) {
+
+	.#{$plump-namespace}wrapper--narrow,
+	%#{$plump-namespace}wrapper--narrow {
+		max-width: $plump-wrapper-width-narrow;
+	}
+
+}

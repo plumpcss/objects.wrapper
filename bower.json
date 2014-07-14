@@ -1,0 +1,21 @@
+{
+	"name": "plumpcss-wrapper",
+	"version": "0.1.0",
+	"authors": [
+		"James Howard <james@plumpdigital.co.uk>",
+		"Jon Hurrell <jon@plumpdigital.co.uk>"
+	],
+	"description": "A content wrapper object for the plumpcss framework",
+	"main": "_objects.wrapper.scss",
+	"keywords": [
+		"plumpcss",
+		"oocss",
+		"css",
+		"object"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"plumpcss-defaults": "latest"
+	},
+	"homepage": "http://plumpcss.github.io"
+}
