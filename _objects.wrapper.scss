@@ -11,6 +11,8 @@ $plump-enable-wrapper--narrow: false !default;
 .#{$plump-namespace}wrapper,
 %#{$plump-namespace}wrapper {
 	max-width: $plump-wrapper-width;
+	margin-right: auto;
+	margin-left: auto;
 	padding-right: $plump-wrapper-padding;
 	padding-left: $plump-wrapper-padding;
 }
