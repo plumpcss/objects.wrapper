@@ -7,6 +7,7 @@ $plump-wrapper-width-narrow:   960px !default;
 $plump-wrapper-padding:        $plump-base-spacing-unit !default;
 
 $plump-enable-wrapper--narrow: false !default;
+$plump-enable-wrapper--flush:  false !default;
 
 .#{$plump-namespace}wrapper,
 %#{$plump-namespace}wrapper {
@@ -28,4 +29,18 @@ $plump-enable-wrapper--narrow: false !default;
 		max-width: $plump-wrapper-width-narrow;
 	}
 
+}
+
+
+
+
+
+
+@if ($plump-enable-wrapper--flush == true) {
+	
+	.#{$plump-namespace}wrapper--flush,
+	%#{$plump-namespace}wrapper--flush {
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
