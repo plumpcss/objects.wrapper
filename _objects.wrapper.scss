@@ -4,9 +4,11 @@
 
 $plump-wrapper-width:          1200px !default;
 $plump-wrapper-width-narrow:   960px !default;
+$plump-wrapper-width-wide:     1400px !default;
 $plump-wrapper-padding:        $plump-base-spacing-unit !default;
 
 $plump-enable-wrapper--narrow: false !default;
+$plump-enable-wrapper--wide:   false !default;
 $plump-enable-wrapper--flush:  false !default;
 
 .#{$plump-namespace}wrapper,
@@ -27,6 +29,15 @@ $plump-enable-wrapper--flush:  false !default;
 	.#{$plump-namespace}wrapper--narrow,
 	%#{$plump-namespace}wrapper--narrow {
 		max-width: $plump-wrapper-width-narrow;
+	}
+
+}
+
+@if ($plump-enable-wrapper--wide == true) {
+
+	.#{$plump-namespace}wrapper--wide,
+	%#{$plump-namespace}wrapper--wide {
+		max-width: $plump-wrapper-width-wide;
 	}
 
 }
