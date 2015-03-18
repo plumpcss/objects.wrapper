@@ -18,8 +18,8 @@ $plump-enable-wrapper--flush:  false !default;
 
 
 
-.#{$plump-namespace}o-wrapper,
-%#{$plump-namespace}o-wrapper {
+.#{$plump-wrapper-namespace}o-wrapper,
+%#{$plump-wrapper-namespace}o-wrapper {
 	max-width: $plump-wrapper-width;
 	margin-right: auto;
 	margin-left: auto;
@@ -33,8 +33,8 @@ $plump-enable-wrapper--flush:  false !default;
 
 @if ($plump-enable-wrapper--narrow == true) {
 
-	.#{$plump-namespace}o-wrapper--narrow,
-	%#{$plump-namespace}o-wrapper--narrow {
+	.#{$plump-wrapper-namespace}o-wrapper--narrow,
+	%#{$plump-wrapper-namespace}o-wrapper--narrow {
 		max-width: $plump-wrapper-width-narrow;
 	}
 
@@ -46,8 +46,8 @@ $plump-enable-wrapper--flush:  false !default;
 
 @if ($plump-enable-wrapper--wide == true) {
 
-	.#{$plump-namespace}o-wrapper--wide,
-	%#{$plump-namespace}o-wrapper--wide {
+	.#{$plump-wrapper-namespace}o-wrapper--wide,
+	%#{$plump-wrapper-namespace}o-wrapper--wide {
 		max-width: $plump-wrapper-width-wide;
 	}
 
@@ -59,8 +59,8 @@ $plump-enable-wrapper--flush:  false !default;
 
 @if ($plump-enable-wrapper--flush == true) {
 
-	.#{$plump-namespace}o-wrapper--flush,
-	%#{$plump-namespace}o-wrapper--flush {
+	.#{$plump-wrapper-namespace}o-wrapper--flush,
+	%#{$plump-wrapper-namespace}o-wrapper--flush {
 		padding-right: 0;
 		padding-left: 0;
 	}
